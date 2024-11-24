@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    justify-content: space-around;
+    overflow: auto;
+    height: 100vh;
+padding-left:80px;
+}
+
+.grid div:nth-child(1) {
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border:1px solid;
+}
+
+.grid div:nth-last-of-type(1) {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid;
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

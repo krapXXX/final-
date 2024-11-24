@@ -17,21 +17,21 @@ body {
     top: 0;
     left: 0;
     background: #c63467;
-    width: 150px;
+    width: 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     z-index: 1;
-    transition: width 1s ease-out;
+    transition: width 0.5s ease-out;
 }
 #menu:hover
 {
-    width:350px;
+    
+    width:330px;
 }
 
 #menu li a {
-    padding:30px ;
-    padding-left: 50px;
+    padding:20px ;
     position: sticky;
     top: 0;
     display: block;
@@ -52,7 +52,7 @@ body {
 
 #menu li a .icon 
 {
-    transition: margin-left 1s ease-out; 
+    transition: margin-left 0.5s ease-out; 
 }
 
 #menu li a .name 
@@ -60,7 +60,7 @@ body {
     font-size:30px;
     color: black;
     opacity: 0;
-    transition: opacity 1s ease-out, padding-left 1s ease-out;
+    transition: opacity 0.5s ease-out, padding-left 0.5s ease-out;
     padding-left: 30px;
 }
 
