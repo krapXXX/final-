@@ -1,11 +1,11 @@
 body {
-    background: #ffb7de;
+    background: #f0f0f0;
     margin: 0;
     padding: 0;
-    
 }
 
 * {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,26 +16,30 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #c63467;
-    width: 80px;
-    height: 100vh;
+    background: #ed6393;
+    width: 60px;
     display: flex;
     flex-direction: column;
     z-index: 1;
     transition: width 0.5s ease-out;
 }
+
 #menu:hover
 {
-    
     width:330px;
+body {
+    background-color:rgba(0, 0, 0, 0.685);
+    z-index: 10;
 }
-
+}
 #menu li a {
-    padding:20px ;
+    padding:12px ;
+    padding-bottom: 20px;
+    padding-top: 20px;
     position: sticky;
     top: 0;
     display: block;
-    background: #c63467;
+    background: #ed6393;
     color: #fff;
     text-decoration: none;
     width: 100%;
@@ -43,10 +47,72 @@ body {
     display: flex;
     
 }
+.menu_toggler {
+    display: flex;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.menu_toggler span {
+    border-radius: 100px;
+    height: 4px;
+    width: 60%;
+    background-color: black;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+
+.menu_toggler::before,
+.menu_toggler::after {
+    content: ' ';
+    position: absolute;
+    height: 5px;
+    width: 62%;
+    background-color: black;
+    border-radius: 100px;
+      transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+
+.menu_toggler::before {
+    
+    top: 0;
+}
+
+.menu_toggler::after {
+   
+    bottom: 0;
+}
+.menu_toggler.active span {
+    transform: scale(0);
+}
+.menu_toggler.active::before
+{
+    top:50%;
+    transform: rotate(-45deg) translate (0,-50%);
+}
+.menu_toggler.active::after
+{
+    bottom:50%;
+    transform: rotate(45deg) translate (0,50%);
+}
+
+@media (max-width:900)
+{
+    .menu_toggler{display:flex}
+}
 #menu li a:hover {
     color: rgb(255, 255, 255);
     background: #de4e81;
-    box-shadow: inset 0 -9px 0 0 #f40b5d;
+    box-shadow: inset 0 -9px 0 0 #cd3b6e;
 }
 
 
@@ -70,8 +136,6 @@ body {
    
 }
 
-
-
 #menu li {
     background-color: #ffbdd4;
     text-align: center;
@@ -88,4 +152,4 @@ body {
 #menu li:hover > ul
  {
     display: block;
-}
+ }
