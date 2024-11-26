@@ -12,7 +12,7 @@ body {
 }
 
 #menu1 {
-    height: 100vh;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +20,8 @@ body {
     width: 60px;
     display: none;
     flex-direction: column;
-    z-index: 1;
+    z-index: 10;
+
 }
 
 #menu1 li a {
@@ -99,6 +100,7 @@ body {
     cursor: pointer;
     z-index: 10;
     opacity: 0;
+
 }
 
 .menu_toggler span {
@@ -129,6 +131,7 @@ body {
 
 .menu_toggler input:checked~ul {
     transform: none;
+    box-shadow: 100px -2px 0px 500vh rgba(0, 0, 0, 0.314);
 }
 
 .pages {
@@ -158,6 +161,7 @@ body {
  
 #menu2:hover { 
     width: 330px; 
+    box-shadow: 100px -2px 0px 500vh rgba(0, 0, 0, 0.314);
 } 
  
  
@@ -229,5 +233,3 @@ body {
         display:none;
     }
 }
-
-
