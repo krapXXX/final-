@@ -10,14 +10,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 #menu1 {
-    height: 70px;
+    height: 4.3em;
     position: fixed;
     top: 0;
     left: 0;
     background: #ed6393;
-    width: 60px;
+    width: 4em;
     display: none;
     flex-direction: column;
     z-index: 10;
@@ -63,7 +62,6 @@ body {
     left: 150px;
     top: 0;
     background: #ffbdd4;
-    width: 150px;
 }
 
 #menu1 li:hover>ul {
@@ -75,8 +73,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
-    width: 60px;
 }
 
 .menu_toggler {
@@ -90,8 +86,8 @@ body {
 
 .menu_toggler input[type="checkbox"] {
     display: block;
-    width: 40px;
-    height: 35px;
+    width: 5em;
+    height: 5em;
 
     position: absolute;
     top: 0;
@@ -106,10 +102,9 @@ body {
 .menu_toggler span {
     z-index: 100;
     display: block;
-    height: 4px;
-    width: 40px;
+    height: 0.2em;
+    width: 2.5em;
     background-color: black;
-    border-radius: 100px;
     margin: 7px;
     position: relative;
     transform-origin: 4px 0px;
@@ -138,7 +133,7 @@ body {
     background-color:#ed6393;
     position: absolute;
     height: 200vh;
-    width: 350px;
+    width: 23em;
     list-style: none;
     margin: -100px 0 0 -50px;
     padding: 115px 0 0 47px;
@@ -152,7 +147,7 @@ body {
     top: 0; 
     left: 0; 
     background: #ed6393; 
-    width: 60px; 
+    width: 4em; 
     display: flex; 
     flex-direction: column; 
     z-index: 1; 
@@ -160,17 +155,17 @@ body {
 } 
  
 #menu2:hover { 
-    width: 330px; 
-    box-shadow: 100px -2px 0px 500vh rgba(0, 0, 0, 0.314);
+    width: 20em; 
+    box-shadow: 100em -2px 0px 500vh rgba(0, 0, 0, 0.314);
 } 
  
  
 #menu2 li a { 
-    padding: 12px; 
     padding-bottom: 20px; 
     padding-top: 20px; 
     position: sticky; 
     top: 0; 
+    left:0;
     display: block; 
     background: #ed6393; 
     color: #fff; 
@@ -214,15 +209,12 @@ body {
     left: 150px; 
     top: 0; 
     background: #ffbdd4; 
-    width: 150px; 
 } 
  
 #menu2 li:hover > ul { 
     display: block; 
 } 
  
-
-
 @media (max-width: 1100px) 
 {
     #menu1

@@ -39,14 +39,23 @@
     }
     
 }
-
-.grid div:nth-child(1) {
-    grid-column: -1/1;
+.grid div:nth-child(1)
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border:1px solid;
+}
+.grid div:nth-child(2) {
     position: fixed;
     top: 0;
     font-weight: bold;
     width: 100%;
-    height: 70px;
+    height: 1.7em;
     font-size: 40px;
     text-align: center;
     display: flex; 
@@ -54,13 +63,13 @@
     align-items: center;
     border:1px solid;
 }
-.grid div:nth-child(2)
-{
+
+.grid div:nth-child(3){
     padding-right: 0px;
     position: fixed;
     right: 10px; 
     margin-top: 10px;
-    height: 50px;
+    height: 3em;
     grid-column: -1/1;
     display: flex;
 }
@@ -69,7 +78,7 @@
     bottom: 0;
     border: 1px solid;
     width: 100%;
-    height: 150px;
+    height: 7em;
     font-size: 20px;
     text-align: center;
     display: flex;
