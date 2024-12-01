@@ -1,30 +1,45 @@
-
-.all
+@font-face {
+    font-family: 'Lacquer';
+    src: url(Lacquer-Regular.ttf);
+}
+.title
 {
+    font-family: 'Lacquer', sans-serif;
+    font-size:2em;
+    font-weight: bold;
+}
+.text
+{
+    display: flex;
+    align-self: flex-start;
+    font-family: 'Lacquer', sans-serif;
+    font-size:1.3em;
+}
+.all {
     display: flex;
     flex-direction: row;
 }
 
 .search {
-    display: flex; 
-    gap: 1em; 
-    z-index: 2; 
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    gap: 1em;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 2.5em;
 }
 
 .search .control {
     font-size: 1.6em;
-    padding: 0.5em; 
+    padding: 0.5em;
     border-radius: 15px;
-    border:none;
+    border: none;
     width: 11em;
 }
 
 .search .btn {
-    font-size: 1.6em; 
+    font-size: 1.6em;
     height: 2.3em;
     padding-top: 0.2em;
     padding-left: 0.5em;
@@ -33,61 +48,85 @@
     border: none;
     border-radius: 15px;
 }
-@media screen and (max-width: 1100px) {
-    .search .control {
-        display: none; 
-    }
-    .search .btn
-    {
-        font-size: 2.5em; 
-        height: 2.3em;
-        padding-top: 0.2em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-    
-}
 
-.grid {
-    display: grid;
-    justify-content: space-around;
-    overflow: auto;
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr 1fr 1fr);
-}
-
-.grid div:nth-child(1) {
+.header1
+{
+    font-family: 'Lacquer', sans-serif;
     position: fixed;
     top: 0;
     font-weight: bold;
     width: 100%;
     height: 1.3em;
-    font-size: 85px;
-    display: flex; 
-    justify-content: center; 
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
-.grid div:nth-child(2){
+.header2
+{
+    transition: none;
     padding-right: 0px;
     position: fixed;
-    right: 10px; 
+    right: 10px;
     margin-top: 10px;
     height: 3em;
-    grid-column: -1/1;
     display: flex;
 }
-
-.grid div:nth-last-of-type(1) {
+.main {
+    position: fixed;
+    top: 6em;
+    bottom: 8.7em;
+    left: 6em;
+    right: 6em;
+    display: flex;
+    overflow: scroll;
+    padding: 0.5em;
+}
+.footer
+{
     position: fixed;
     bottom: 0;
     border: 1px solid;
     width: 100%;
     height: 7em;
     font-size: 20px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr 1fr 1fr); 
+    gap: 1em; 
 }
 
+.grid div { 
+    display: flex;
+    align-items: flex-start; 
+}
+
+.grid div img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.grid div img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .search .control {
+        display: none;
+    }
+
+    .search .btn {
+        font-size: 2.5em;
+        height: 2.3em;
+        padding-top: 0.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+}
+ 

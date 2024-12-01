@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="main.css" />
 
 </head>
+<style>
+
+@media (max-width: 1350px) 
+{
+    .search .control {
+        display: none;
+    }
+
+    .search .btn {
+        font-size: 2.5em;
+        height: 2.3em;
+        padding-top: 0.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+</style>
     <body class=all>
 
         <nav id="menu1">
@@ -73,9 +90,8 @@
             <li><a href = "main.html">Mattel ></a></li>
             <li><a href = "friends.html">Friends&Family ></a></li>
         </ul>
-    <div class="grid">
-        <div>Friends & Family</div>
-        <div>
+        <div class ="header1"> Friends & Family</div>
+        <div class = "header2">
             <form class=" d-flex search">
                 <input class="control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">
@@ -83,7 +99,7 @@
                 </button>
             </form>
         </div>
-        <div>
+        <div class = "footer">
             contact us...
         </div>
     </div>

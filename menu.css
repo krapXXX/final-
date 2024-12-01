@@ -215,7 +215,6 @@ body {
 
 #crumbs
 {
-    z-index: 100;
     display: flex; 
     flex-direction: row;
     width: 30%;
@@ -223,10 +222,11 @@ body {
     top: 0; 
     left:0;
     left:4.5em;
-    height: 6.3em;
+    height: 5em;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 1em;
+    display: flex;
+    align-items: center;
 }
  
 #crumbs li a { 
@@ -247,9 +247,6 @@ body {
     }
     #crumbs
     {
-        top: 6em; 
-        left: 0.2em; 
-        width: 100%;
-        flex-wrap: wrap; 
+        left: 6em; 
     }
 }
