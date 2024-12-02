@@ -15,6 +15,7 @@
     font-family: 'Lacquer', sans-serif;
     font-size:1.3em;
 }
+
 .all {
     display: flex;
     flex-direction: row;
@@ -73,27 +74,25 @@
     display: flex;
 }
 .main {
-    position: fixed;
+    position: absolute;
     top: 6em;
-    bottom: 8.7em;
+    bottom:8.7em;
     left: 6em;
     right: 6em;
     display: flex;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0.5em;
 }
-.footer
-{
+.footer {
     position: fixed;
-    bottom: 0;
-    border: 1px solid;
+    bottom:0;
     width: 100%;
     height: 7em;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 .grid {
     display: grid; 
@@ -115,6 +114,53 @@
 }
 
 
+.carousel {
+    white-space: nowrap;
+    display: block;
+    padding: 2em;
+    overflow-x: auto;
+    height: 25em;
+    margin-left: -1em;;
+}
+
+.blocks {
+    display: flex;
+    gap: 2em;
+    justify-content: start; 
+    align-items: center;
+    vertical-align: middle;
+}
+
+.blocks span {
+    width: 15em;
+    height: 18em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.741);
+    transition: transform 0.5s ease;
+}
+
+
+
+.bl_title
+{
+    margin-top: 1em;
+    font-family: 'Lacquer', sans-serif;
+    font-size:1.5em;
+    font-weight: bold;
+}
+.bl_text {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 2em;
+    font-family: 'Lacquer', sans-serif;
+    font-size: 1em;
+}
+
 @media screen and (max-width: 1100px) {
     .search .control {
         display: none;
@@ -129,4 +175,3 @@
     }
 
 }
- 

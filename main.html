@@ -10,18 +10,13 @@
 <style>
     .grid div:nth-child(1) {
         grid-column: 1/2;
-        height: 10em;
         justify-content: center;
-        transform: none;
     }
 
     .grid div:nth-child(2) {
         grid-column: 2/4;
-        height: 7.7em;
         display: flex;
-        align-items: center;
     }
-
 
     .grid div:nth-child(3) {
         grid-column: 1/3;
@@ -35,23 +30,72 @@
     .grid div:nth-child(5) {
         align-items: center;
         justify-content: center;
-
         grid-row: 2/4;
         grid-column: 3/4;
-transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
+    }
+
+    .grid div:nth-child(10) {
+        grid-column: -1/1;
+        align-items: center;
+        justify-content: center;
+        grid-row: 8/9;
+        grid-column: 3/4;
+        transition: transform 1s ease-in-out;
+        margin: 2em;
+        padding-bottom: 1em;
     }
 
     .grid div:nth-child(n+6) {
         grid-column: 1 / -1;
     }
 
+    .blocks span:hover {
+        transform: scale(1.12);
+        box-shadow: 0 0 10px rgb(139, 1, 1);
+ .bl_title{
+            opacity:0%;
+        }
+        .bl_text{
+            opacity:0%;
+        }
+    }
 
-
+    .blocks span:nth-child(1):hover {
+        background-image: url("pics/pages/barb.jpg");
+        background-size: cover;
+    }
+    .blocks span:nth-child(2):hover {
+        background-image: url("pics/pages/HW.jpg");
+        background-size: cover;
+    }
+    .blocks span:nth-child(3):hover {
+        background-image: url("pics/pages/Fisher.jpg");
+        background-size: cover;
+    }
+    .blocks span:nth-child(4):hover {
+        background-image: url("pics/pages/A_girl.avif");
+        background-size: cover;
+    }
+    .blocks span:nth-child(5):hover {
+        background-image: url("pics/pages/MMOU.jpg");
+        background-size: cover;
+    }
+    .blocks span:nth-child(6):hover {
+        background-image: url("pics/pages/uno.jpg");
+        background-size: cover;
+    }
+   
 
     @media screen and (min-width: 1100px) {
 
         .grid div:nth-child(5) {
             transform: scale(1.5);
+        }
+
+        .grid div:nth-child(10) {
+            transform: scale(1.5);
+            margin: 7em;
         }
 
     }
@@ -66,6 +110,31 @@ transition: transform 1s ease-in-out;
             grid-column: -1/1;
             grid-row: 1 / 2;
         }
+
+        .grid div:nth-child(3) {
+            grid-column: -1/1;
+            grid-row: 3/4;
+        }
+
+        .grid div:nth-child(4) {
+            grid-column: -1/1;
+            grid-row: 4/5;
+        }
+
+        .grid div:nth-child(5) {
+            grid-column: -1/1;
+            grid-row: 5/6;
+        }
+
+        .grid div:nth-child(10) {
+            grid-column: -1/1;
+            grid-row: 10/11;
+        }
+    }
+
+    .list {
+        list-style-type: disc;
+        list-style-position: inside;
     }
 </style>
 
@@ -148,7 +217,7 @@ transition: transform 1s ease-in-out;
     <div class="main">
         <div class=grid>
             <div>
-                <img src="pics/pages/Mattel-Logo.png" style="width: 10em; height: 10em;">
+                <img src="pics/pages/Mattel-Logo.png" style="width: 11em; height: 11em;">
             </div>
             <div class="text">
                 Mattel, Inc. is a globally recognized American toy manufacturing company known for producing some of the
@@ -161,13 +230,13 @@ transition: transform 1s ease-in-out;
             </div>
 
             <div class="text">
-                <ul type="disc">
-                    <li><strong>Founded:</strong> 1945 by Harold "Matt" Matson and Elliot Handler in El Segundo,
-                        California.</li>
-                    <li><strong>Name Origin:</strong> "Mattel" is a combination of the founders' first names, "Matt" and
-                        "Elliot."</li>
-                    <li><strong>Early Focus:</strong> Initially produced picture frames but later transitioned to toys.
-                    </li>
+                <ul>
+                    <li class="list"><strong>Founded:</strong> 1945 by Harold "Matt" Matson and Elliot Handler in El
+                        Segundo, California.</li>
+                    <li class="list"><strong>Name Origin:</strong> "Mattel" is a combination of the founders' first
+                        names, "Matt" and "Elliot."</li>
+                    <li class="list"><strong>Early Focus:</strong> Initially produced picture frames but later
+                        transitioned to toys.</li>
                 </ul>
             </div>
             <div>
@@ -176,42 +245,84 @@ transition: transform 1s ease-in-out;
             <div class="title">
                 Flagship Products
             </div>
-            <div class="text">
-
-                <ul type="decimal">
-                    <li type="none"> Mattel is the home of some of the most famous toy brands, including:</li>
-                    <li><strong>Barbie (1959):</strong>A revolutionary doll that became a cultural icon, embodying
-                        fashion, empowerment, and imagination.</li>
-                    <li><strong>Hot Wheels (1968): </strong> Die-cast toy cars known for their speed, design, and
-                        collectability.</li>
-                    <li><strong>Fisher-Price (1930):</strong>Specializing in educational toys for infants, toddlers, and
-                        preschoolers.</li>
-                    <li><strong>American Girl (1986):</strong> Dolls and books that focus on historical and modern
-                        stories aimed at empowering young girls.</li>
-                    <li><strong>Masters of the Universe (1980s): </strong>Action figures and media franchises like
-                        He-Man and Skeletor.</li>
-                    <li><strong>Uno (1992): </strong> A popular card game for families and friends.</li>
-
-                </ul>
+            <div class="carousel">
+                <div class="blocks">
+                    <span>
+                        <div class="bl_title">
+                            Barbie <br>(1959)
+                        </div>
+                        <div class="bl_text">
+                            A revolutionary doll that<br> became a cultural icon,<br> embodying
+                            fashion, <br>empowerment, and imagination.
+                        </div>
+                    </span>
+                    <span>
+                        <div class="bl_title">
+                            Hot Wheels<br> (1968)
+                        </div>
+                        <div class="bl_text">
+                            Die-cast toy cars known <br>for their speed, design,<br> and collectability.
+                        </div>
+                    </span>
+                    <span>
+                        <div class="bl_title">
+                            Fisher-Price<br> (1930)
+                        </div>
+                        <div class="bl_text">
+                            Specializing in educational <br>toys for infants, toddlers, <br>and preschoolers.
+                        </div>
+                    </span>
+                    <span>
+                        <div class="bl_title">
+                            American Girl<br> (1986)
+                        </div>
+                        <div class="bl_text">
+                            Dolls and books that <br>focus on historical and<br> modern stories aimed <br>at empowering
+                            young girls.
+                        </div>
+                    </span>
+                    <span>
+                        <div class="bl_title">
+                            Masters of the<br> Universe (1980s)
+                        </div>
+                        <div class="bl_text">
+                            Action figures and<br> media franchises like <br>He-Man and Skeletor.
+                        </div>
+                    </span>
+                    <span>
+                        <div class="bl_title">
+                            Uno <br>(1992)
+                        </div>
+                        <div class="bl_text">
+                            A popular card game<br> for families and friends.
+                        </div>
+                    </span>
+                </div>
             </div>
             <div class="title">
                 Founding and History
             </div>
             <div class="text">
                 <ul type="disc">
-                    <li><strong>Founded:</strong> 1945 by Harold "Matt" Matson and Elliot Handler in El Segundo,
+                    <li class="list"><strong>Founded:</strong> 1945 by Harold "Matt" Matson and Elliot Handler in El
+                        Segundo,
                         California.</li>
-                    <li><strong>Name Origin:</strong> "Mattel" is a combination of the founders' first names, "Matt" and
+                    <li class="list"><strong>Name Origin:</strong> "Mattel" is a combination of the founders' first
+                        names, "Matt" and
                         "Elliot."</li>
-                    <li><strong>Early Focus:</strong> Initially produced picture frames but later transitioned to toys.
+                    <li class="list"><strong>Early Focus:</strong> Initially produced picture frames but later
+                        transitioned to toys.
                     </li>
                 </ul>
+            </div>
+            <div>
+                <img src="pics/pages/history.webp" style="height: 20em;">
             </div>
         </div>
 
     </div>
-    <div class=footer>
-        contact us...
+    <div class="footer">
+        <p>contact us...</p>
     </div>
     </div>
 
