@@ -4,7 +4,6 @@
 }
 .title
 {
-    font-family: 'Lacquer', sans-serif;
     font-size:2em;
     font-weight: bold;
 }
@@ -12,7 +11,6 @@
 {
     display: flex;
     align-self: flex-start;
-    font-family: 'Lacquer', sans-serif;
     font-size:1.3em;
 }
 
@@ -52,7 +50,6 @@
 
 .header1
 {
-    font-family: 'Lacquer', sans-serif;
     position: fixed;
     top: 0;
     font-weight: bold;
@@ -92,7 +89,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ed6393;
 } 
 .grid {
     display: grid; 
@@ -156,7 +152,6 @@
 .bl_title
 {
     margin-top: 1em;
-    font-family: 'Lacquer', sans-serif;
     font-size:1.5em;
     font-weight: bold;
 }
@@ -165,7 +160,6 @@
     justify-content: center; 
     align-items: center; 
     padding-top: 2em;
-    font-family: 'Lacquer', sans-serif;
     font-size: 1em;
 }
 
