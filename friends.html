@@ -6,123 +6,283 @@
     <title>video</title>
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="all.css" />
-
 </head>
+
 <style>
-.grid div:nth-child(1) {
+    .grid {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr 1fr 1fr); 
+    gap: 1em; 
+}
+
+.grid div { 
+    display: flex;
+    align-items: flex-start; 
+    border: 1px solid;
+    justify-content: center;
+
+}
+
+.grid div img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.grid div img:hover {
+    transform: scale(1.1);
+}
+
+    .grid div:nth-child(1) {
+        grid-column: -1/1;
+        height: auto;
+    }
+
+    .grid div:nth-child(2) {
+        grid-column: 1/2;
+        height: auto;
+    }
+
+    .grid div:nth-child(3) {
+        grid-column: 2/3;
+    }
+
+    .grid div:nth-child(4) {
+        grid-column: 3/4;
+        height: auto;
+    }
+
+    .grid div:nth-child(5) {
+        grid-column: 1/3;
+        height: auto;
+    }
+
+    .grid div:nth-child(8) {
+        grid-column: 2/4;
+    }
+
+    .list {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    @media screen and (max-width: 1350px) {
+        .search .control {
+            display: none;
+        }
+
+        .search .btn {
+            font-size: 2.5em;
+            height: 2.3em;
+            padding-top: 0.2em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+
+    }
+
+    @media screen and (min-width: 1500px) {
+
+        .grid div img {
+            transform: scale(1.15);
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 1250px) {
+       div .text
+    {
+        font-size: 1.6em;
+    }
+    div .title
+    {
+        font-size: 2.3em;
+    }
+    div .big_title
+    {
+        font-size: 3.5em;
+    }
+.grid div:nth-child(1)
+{
     grid-column: -1/1;
 }
-
-.grid div:nth-child(2) {
-    display: flex;
-}
-
-.grid div:nth-child(3) {
-    grid-column: 1/3;
-
-}
-@media screen and (max-width: 1350px) {
-    .search .control {
-        display: none;
+    .grid div:nth-child(2) {
+        grid-column: -1/1;
+        height: auto;
     }
 
-    .search .btn {
-        font-size: 2.5em;
-        height: 2.3em;
-        padding-top: 0.2em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+    .grid div:nth-child(3) {
+        justify-content: center;
+        grid-column: -1/1;
+        margin-bottom: 0.8em;
     }
-#crumbs
-{
-    display: none;
-}
+
+    .grid div:nth-child(4) {
+        grid-column: -1/1;
+        height: auto;
+
+    }
+
+    .grid div:nth-child(5) {
+        grid-column: -1/1;
+        height: auto;
+
+    }
+
+    .grid div:nth-child(6) {
+        grid-column: -1/1;
+        justify-content: center;
+    }
+    
+    .grid div:nth-child(7) {
+        grid-column: -1/1;
+        justify-content: center;
+    }
+
+    .grid div:nth-child(8) {
+        height: auto;
+
+        grid-column: -1/1;
+    }
 }
 </style>
-    <body class=all>
 
-        
-        <nav id="menu1">
-            <div class="menu_toggler">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-    
-                <ul class="pages">
-                    <li><a href="main.html"><img src="pics/letterB.png" >
-                            <p class="name" >Mattel</p>
-                        </a>
-                    <li><a href="hair.html"><img src="pics/ponytail.png" >
-                            <p class="name">Hair</p>
-                        </a>
-                    <li><a href="outfit.html"><img src="pics/dress.png" >
-                            <p class="name">Outfits</p>
-                        </a>
-                    <li><a href="prof.html"><img src="pics/fairy.png" >
-                            <p class="name">Talants</p>
-                        </a>
-                    <li><a href="friends.html"><img src="pics/friends_W.png" >
-                            <p class="name" style="color:white">Friends&Family</p>
-                        </a>
-                    <li><a href="movie.html"><img src="pics/movie.png" >
-                            <p class="name">Movies</p>
-                        </a>
-                    <li><a href="shop.html"><img src="pics/bag.png" >
-                            <p class="name">Shop</p>
-                        </a>
-                </ul>
-            </div>
-        </nav>
-        <nav id="menu2">
-            <ul>
-                <li><a href="main.html"><img src="pics/letterB.png" >
-                    <p class="name" >Mattel</p>
+<body class=all>
+
+
+    <nav id="menu1">
+        <div class="menu_toggler">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="pages">
+                <li><a href="main.html"><img src="pics/letterB.png">
+                        <p class="name">Mattel</p>
+                    </a>
+                <li><a href="hair.html"><img src="pics/ponytail.png">
+                        <p class="name">Hair</p>
+                    </a>
+                <li><a href="outfit.html"><img src="pics/dress.png">
+                        <p class="name">Outfits</p>
+                    </a>
+                <li><a href="prof.html"><img src="pics/fairy.png">
+                        <p class="name">Talants</p>
+                    </a>
+                <li><a href="friends.html"><img src="pics/friends_W.png">
+                        <p class="name" style="color:white">Friends&Family</p>
+                    </a>
+                <li><a href="movie.html"><img src="pics/movie.png">
+                        <p class="name">Movies</p>
+                    </a>
+                <li><a href="shop.html"><img src="pics/bag.png">
+                        <p class="name">Shop</p>
+                    </a>
+            </ul>
+        </div>
+    </nav>
+    <nav id="menu2">
+        <ul>
+            <li><a href="main.html"><img src="pics/letterB.png">
+                    <p class="name">Mattel</p>
                 </a>
-            <li><a href="hair.html"><img src="pics/ponytail.png" >
+            <li><a href="hair.html"><img src="pics/ponytail.png">
                     <p class="name">Hair</p>
                 </a>
-            <li><a href="outfit.html"><img src="pics/dress.png" >
+            <li><a href="outfit.html"><img src="pics/dress.png">
                     <p class="name">Outfits</p>
                 </a>
-            <li><a href="prof.html"><img src="pics/fairy.png" >
+            <li><a href="prof.html"><img src="pics/fairy.png">
                     <p class="name">Talants</p>
                 </a>
-            <li><a href="friends.html"><img src="pics/friends_W.png" >
+            <li><a href="friends.html"><img src="pics/friends_W.png">
                     <p class="name" style="color:white">Friends&Family</p>
                 </a>
-            <li><a href="movie.html"><img src="pics/movie.png" >
+            <li><a href="movie.html"><img src="pics/movie.png">
                     <p class="name">Movies</p>
                 </a>
-            <li><a href="shop.html"><img src="pics/bag.png" >
+            <li><a href="shop.html"><img src="pics/bag.png">
                     <p class="name">Shop</p>
                 </a>
-            </ul>
-        </nav>
+        </ul>
+    </nav>
+    
+    <div class=header1>
+        Friends & Family
+    </div>
+    <div class="header2">
+        <form class=" d-flex search">
+            <input class="control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">
+                <img src="pics/search.png" style="width: 1.6em; margin-top: 3px; transform: none;">
+            </button>
+        </form>
+    </div>
 
-        <div class ="header1"> Friends & Family</div>
-        <div class = "header2">
-            <form class=" d-flex search">
-                <input class="control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">
-                    <img src="pics/search.png" style="width: 1.6em; margin-top: 3px;">
-                </button>
-            </form>
-        </div>
-        <div class="main">
-            <div class=grid>
-                <div class = "title" style ="font-size: 3em;">
-                    Barbie's Family
-                </div>
-                
-                </div>
-                </div>
-        <div class = "footer">
-            contact us...
+    <div class="main">
+        <div class="grid">
+
+            <div class="big_title">
+                Barbie's Family
+            </div>
+            <div style="flex-direction: column;">
+                <span class="title">Skipper Roberts</span>
+                <span class="text">
+                    <ul>
+                        <li class="list">Introduced: 1964</li>
+                        <li class="list">Barbie's younger sister, Skipper, is adventurous and tech-savvy. Over the
+                            years, she’s evolved into a more modern teen with interests like sports and social media.
+                        </li>
+                    </ul>
+                </span>
+            </div>
+            <div>
+                <img src="/pics//pages/2sis.png" style="width: 20em;">
+            </div>
+            <div style="flex-direction: column;">
+                <span class="title">Stacie Roberts</span>
+                <span class="text">
+                    <ul>
+                        <li class="list">Introduced: 1990</li>
+                        <li class="list">Another younger sister, Stacie is portrayed as energetic and sporty, often seen
+                            enjoying outdoor activities and trying new things.</li>
+                    </ul>
+                </span>
+            </div>
+            <div style="flex-direction: column;">
+                <span class="title">Chelsea Roberts</span>
+                <span class="text">
+                    <ul>
+                        <li class="list">Introduced: 2011</li>
+                        <li class="list">Barbie's youngest sister, Chelsea, is playful and imaginative, often featured
+                            in adventures that highlight childhood wonder.</li>
+                    </ul>
+                </span>
+            </div>
+            <div>
+                <img src="/pics//pages/chels.png" style="width: 20em;">
+            </div>
+            <div>
+                <img src="/pics//pages/parents.png" style="width: 20em;">
+            </div>
+            <div style="flex-direction: column;">
+                <span class="title">Parents (Margaret and George Roberts)</span>
+                <span class="text">
+                    <ul>
+                        <li class="list">Barbie's parents have been mentioned in books and storylines but are rarely
+                            featured as dolls.</li>
+                    </ul>
+                </span>
+            </div>
         </div>
     </div>
 
-  
+    <div class="footer">
+        contact us...
+    </div>
+
+
 </body>
 
 </html>
