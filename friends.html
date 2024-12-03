@@ -18,7 +18,6 @@
 .grid div { 
     display: flex;
     align-items: flex-start; 
-    border: 1px solid;
     justify-content: center;
 
 }
@@ -89,18 +88,14 @@
 
     }
 
-    @media screen and (max-width: 1250px) {
-       div .text
+    @media screen and (max-width: 800px) {
+        div .title
     {
         font-size: 1.6em;
     }
-    div .title
+   div .text
     {
         font-size: 2.3em;
-    }
-    div .big_title
-    {
-        font-size: 3.5em;
     }
 .grid div:nth-child(1)
 {
@@ -126,7 +121,7 @@
     .grid div:nth-child(5) {
         grid-column: -1/1;
         height: auto;
-
+grid-row: 6/7;
     }
 
     .grid div:nth-child(6) {
@@ -144,6 +139,32 @@
 
         grid-column: -1/1;
     }
+}
+
+@media screen and (max-width: 1250px) {
+       
+.grid div:nth-child(1)
+{
+    grid-column: -1/1;
+}
+.grid div:nth-child(2) {
+        grid-column: -1/1;
+        height: auto;
+    }
+
+    .grid div:nth-child(3) {
+        justify-content: center;
+        grid-column: -1/1;
+        margin-bottom: 0.8em;
+    }
+
+    .grid div:nth-child(4) {
+        grid-column: -1/1;
+        height: auto;
+
+    }
+
+   
 }
 </style>
 
@@ -238,7 +259,7 @@
                 </span>
             </div>
             <div>
-                <img src="/pics//pages/2sis.png" style="width: 20em;">
+                <img src="pics/pages/2sis.png" style="width: 15em;">
             </div>
             <div style="flex-direction: column;">
                 <span class="title">Stacie Roberts</span>
@@ -261,10 +282,10 @@
                 </span>
             </div>
             <div>
-                <img src="/pics//pages/chels.png" style="width: 20em;">
+                <img src="pics/pages/chels.png" style="width: 15em;">
             </div>
             <div>
-                <img src="/pics//pages/parents.png" style="width: 20em;">
+                <img src="pics/pages/parents.png" style="width: 15em;">
             </div>
             <div style="flex-direction: column;">
                 <span class="title">Parents (Margaret and George Roberts)</span>
