@@ -52,7 +52,18 @@
     border: none;
     border-radius: 15px;
 }
-
+/* .grid_page
+{
+    display:grid;
+}
+.grid_page .header1 .header2 .main .footer
+{
+    grid-column: -1/1;
+}
+.grid_page div:nth-last-child(1)
+{
+    grid-row: 3/4;
+} */
 .header1
 {
     background-color: rgb(23, 23, 23);
@@ -93,7 +104,7 @@
     padding: 0.5em;
 }
 .footer {
-    position: fixed;
+    position: absolute;
     bottom:0;
     color:white;
     width: 100%;
