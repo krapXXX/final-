@@ -4,7 +4,8 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    font-family: 'Lacquer', sans-serif;
+    font-family: 'Parkinsans', sans-serif;
+
 }
 
 * {
@@ -147,7 +148,7 @@ body {
     background-color: #ed6393;
     position: absolute;
     height: 200vh;
-    width: 27em;
+    width: 30em;
     list-style: none;
     margin: -100px 0 0 -50px;
     padding: 115px 0 0 47px;
@@ -164,12 +165,12 @@ body {
     width: 4em;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     transition: width 0.5s ease-out;
 }
 
 #menu2:hover {
-    width: 20em;
+    width: 22em;
     box-shadow: 100em -2px 0px 500vh rgba(0, 0, 0, 0.314);
 }
 
