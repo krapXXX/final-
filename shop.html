@@ -7,6 +7,175 @@
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="all.css" />
 </head>
+<style>
+    .footer {
+        margin-top: 200em;
+    }
+
+    .cont {
+        padding: 2.5em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 35em;
+        width: 25em;
+        background-color: #ffffff;
+        border-radius: 15px;
+        transition: transform 0.5s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.741);
+    }
+
+    .card img {
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.card img.original {
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.card img.hovered {
+    position: absolute;
+    top:0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover img.original {
+    opacity: 0;
+}
+
+.card:hover img.hovered {
+    opacity: 1;
+}
+
+    .name {
+        padding-left: 0.5em;
+        padding-top: 0.5em;
+        text-align: left;
+        font-size: 1.5em;
+        width: 100%;
+        text-transform: capitalize;
+    }
+
+    .prv_price {
+        padding-left: 1em;
+        padding-top: 1em;
+        text-align: left;
+        font-size: 1.3em;
+        text-decoration: line-through;
+        width: 100%;
+        color: #383838
+    }
+
+    .price {
+        color: red;
+        padding-left: 0.7em;
+        text-align: left;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .star {
+        padding-left: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0.3em;
+        width: 100%;
+    }
+
+    .star img {
+        height: 2em;
+        width: auto;
+    }
+
+    .cart {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 1em;
+    }
+
+    .cart img {
+        height: 2em;
+        width: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        height: em;
+        display: flex;
+        flex-direction: row;
+        gap: 9em;
+    }
+    .footer {
+    margin-top: 200em;
+}
+
+    .footer{
+        margin-top:100em;
+    }
+  
+
+@media screen and (max-width:1920px) 
+{
+    .footer{
+        margin-top:135em;
+    }
+} 
+@media screen and (min-width:1010px) 
+{
+    .footer{
+        margin-top:160em;
+    }
+} 
+@media screen and (max-width:1020px) 
+{
+    .footer{
+        margin-top:310em;
+    }
+    .main{
+        left:1em;
+        right:1em;
+    }
+} 
+
+</style>
 
 <body class=all>
 
@@ -61,7 +230,201 @@
             </button>
         </form>
     </div>
+    <div class="main">
+        <div class=cont>
 
+            <div class="card">
+                <img src="pics/doll.avif" class = "original">
+                <img src="pics/doll_1.avif" class = "hovered">
+                <div class="name">scaters barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">3500.00</div>
+                <div class="price">2599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll2.avif" class = "original">
+                <img src="pics/doll2_2.avif" class = "hovered">
+                <div class="name">mermaid barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">2000.00</div>
+                <div class="price">1599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll3.avif" class = "original">
+                <img src="pics/doll3_3.avif" class = "hovered">
+                <div class="name">disabled barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">1500.00</div>
+                <div class="price">599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll4.avif" class = "original">
+                <img src="pics/doll4_4.avif" class = "hovered">
+                <div class="name">latino barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">2000.00</div>
+                <div class="price">1599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll5.jpg" class = "original">
+                <img src="pics/doll5_5.jpg" class = "hovered">
+                <div class="name">colection barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">4500.00</div>
+                <div class="price">2399.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll6.jpg" class = "original">
+                <img src="pics/doll6_6.jpg" class = "hovered">
+                <div class="name">music barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">1000.00</div>
+                <div class="price">799.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll7.jpg" class = "original">
+                <img src="pics/doll7_7.jpg" class = "hovered">
+                <div class="name">classic barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">3000.00</div>
+                <div class="price">2599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll8.jpg" class = "original">
+                <img src="pics/doll8_8.jpg" class = "hovered">
+                <div class="name">rainbow barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">800.00</div>
+                <div class="price">599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll9.jpg" class = "original">
+                <img src="pics/sleep.jpg" class = "hovered">
+                <div class="name">sleepover barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">2000.00</div>
+                <div class="price">1599.99</div>
+            </div>
+            <div class="card">
+                <img src="pics/doll10.avif" class = "original">
+                <img src="pics/doll10.avif" class = "hovered">
+                <div class="name">Astronaut barbie</div>
+                <div class="line">
+                    <div class="star">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_y.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                        <img src="pics/pages/star_b.png">
+                    </div>
+                    <div class="cart">
+                        <img src="pics/pages/cart (2).png">
+                    </div>
+                </div>
+                <div class="prv_price">2500.00</div>
+                <div class="price">2099.99</div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <span class="blocks"><img src="pics/inst.png"></span>

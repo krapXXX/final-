@@ -63,6 +63,8 @@ table {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;
+    justify-content: flex-start; 
+
 }
 
 .card {
@@ -114,9 +116,13 @@ table {
     .footer{
         margin-top:240em;
     }
+    .cont{
+        justify-content: center;
+    }
 } 
 @media screen and (max-width:1350px) 
 {
+    
     .footer{
         margin-top:290em;
     }
