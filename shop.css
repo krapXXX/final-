@@ -1,0 +1,161 @@
+.footer {
+    margin-top: 200em;
+}
+
+.cont {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 35em;
+    width: 25em;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.741);
+}
+
+.card img {
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.card img.original {
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.card img.hovered {
+    position: absolute;
+    top: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 20em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover img.original {
+    opacity: 0;
+}
+
+.card:hover img.hovered {
+    opacity: 1;
+}
+
+.name {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.prv_price {
+    padding-left: 1em;
+    padding-top: 1em;
+    text-align: left;
+    font-size: 1.3em;
+    text-decoration: line-through;
+    width: 100%;
+    color: #383838
+}
+
+.price {
+    color: red;
+    padding-left: 0.7em;
+    text-align: left;
+    font-size: 2em;
+    width: 100%;
+}
+
+.star {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.3em;
+    width: 100%;
+}
+
+.star img {
+    height: 2em;
+    width: auto;
+}
+
+.cart {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 1em;
+}
+
+.cart img {
+    height: 2em;
+    width: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    height: em;
+    display: flex;
+    flex-direction: row;
+    gap: 9em;
+}
+
+.footer {
+    margin-top: 200em;
+}
+
+.footer {
+    margin-top: 100em;
+}
+
+
+@media screen and (max-width:1940px) {
+    .footer {
+        margin-top: 130em;
+    }
+}
+
+@media screen and (max-width:1510px) {
+    .footer {
+        margin-top: 160em;
+    }
+
+    .main {
+        left: 1em;
+        right: 1em;
+    }
+}
