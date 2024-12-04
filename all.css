@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 
 .search .control {
@@ -43,7 +43,7 @@
 }
 
 .search .btn {
-    font-size: 1.6em;
+    font-size: 1.5em;
     height: 2.3em;
     padding-top: 0.2em;
     padding-left: 0.5em;
@@ -52,6 +52,7 @@
     border: none;
     border-radius: 15px;
 }
+
 
 .header1
 {
@@ -80,22 +81,17 @@
     z-index: 3;
 
 }
+
 .main {
-    
     position: absolute;
-    top:6.4em;
-    bottom:8.6em;
+    top:7em;
     left: 6em;
-    right: 6em;
+    right: 2em;
     display: flex;
-    overflow-y: scroll;
-    overflow-x: hidden;
     padding: 0.5em;
 }
 .footer {
-    position: fixed;
-    bottom:0;
-    color:white;
+    color: white;
     width: 100%;
     height: 7em;
     font-size: 20px;
@@ -174,6 +170,10 @@
     padding-top: 2em;
     font-size: 1em;
 }
+  .list {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
 
 @media screen and (max-width: 1100px) {
     .search .control {
@@ -186,6 +186,9 @@
         padding-top: 0.2em;
         padding-left: 0.5em;
         padding-right: 0.5em;
+    }
+    .main{
+        left:2em;
     }
 
 }
